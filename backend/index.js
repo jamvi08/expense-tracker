@@ -12,18 +12,12 @@ console.log('GEMINI_API_KEY:', process.env.GEMINI_API_KEY ? 'Set' : 'Not set');
 const app = express();
 app.use(express.json());
 
-// Configure CORS for production
+// Configure CORS to allow ALL origins
 const corsOptions = {
-  origin: [
-    'https://expense-tracker-frontend1-ten.vercel.app',
-    'http://localhost:3000',
-    'http://localhost:3001',
-    'https://expense-tracker.stepdev.tech/',
-    'https://et.stepdev.tech/'
-  ],
-  methods: ['GET', 'POST', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-  credentials: true,
+  origin: '*', // Allow all origins
+  methods: ['GET', 'POST', 'DELETE', 'PUT', 'PATCH', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Accept'],
+  credentials: false, // Must be false when origin is '*'
   optionsSuccessStatus: 200
 };
 
