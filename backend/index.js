@@ -17,7 +17,9 @@ const corsOptions = {
   origin: [
     'https://expense-tracker-frontend1-ten.vercel.app',
     'http://localhost:3000',
-    'http://localhost:3001'
+    'http://localhost:3001',
+    'https://expense-tracker.stepdev.tech/',
+    'https://et.stepdev.tech/'
   ],
   methods: ['GET', 'POST', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
