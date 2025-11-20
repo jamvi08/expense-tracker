@@ -19,7 +19,7 @@ export default function ExpenseTracker() {
   const chatMessagesEndRef = useRef(null)
 
   
-  const API_BASE = "https://expense-tracker-backend-nine-sable.vercel.app/"
+  const API_BASE = "https://expense-tracker-backend-nine-sable.vercel.app"
   
   
 
