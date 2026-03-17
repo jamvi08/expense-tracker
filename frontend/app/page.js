@@ -26,6 +26,7 @@ export default function ExpenseTracker() {
   
   useEffect(() => {
     fetchExpenses()
+    document.title = "expense-tracker"
   }, [])
 
   

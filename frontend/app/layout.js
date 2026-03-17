@@ -5,8 +5,7 @@ import './globals.css'
 
 export const metadata = {
   title: 'expense-tracker',
-  description: 'Created with v0',
-  generator: 'v0.app',
+  
 }
 
 export default function RootLayout({
